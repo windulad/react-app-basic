@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Header from './Header';
+import User from './User';
 
 const main = {
   background: "cyan",
@@ -17,6 +19,8 @@ root.render(
     <div style={main}>
       <h1>Hey, What's up!</h1>
       <h1>{`We are ${firstvariable} ${secondvariable}`}</h1>
+      <Header/>
+      <User name = "Windula" expertise = "Frontend developer"/>
     </div>
   </>
 );
