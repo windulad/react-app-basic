@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import "./Counter.css"
 
 function Counter(){
     var count = 0;
+
+    useEffect(() => {
+        window.alert("I am clicked");
+    });
+
     const [currentstate, updatestate] = useState(count);
-    const handleclick = () => {
-        updatestate(currentstate + 1)
-    };
+    const handleclick = () => updatestate(currentstate + 1);
 
     return(
         <>
